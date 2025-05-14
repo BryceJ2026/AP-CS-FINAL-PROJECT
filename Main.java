@@ -16,6 +16,10 @@ public class Main {
     if (command.equals("orc")){
       String race = command;
       System.out.print("You picked " + race);
+      String command = scan.nextLine();
+
+      System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, druid, fighter, barbarian, rogue,");
+
     }
     else if (command.equals("elf")){
       String race = command;
@@ -53,7 +57,19 @@ public class Main {
       System.out.println("PEAK");
     }
     else if (command.equals("ye")){
-      System.out.println("");
+      System.out.println("We miss the old kanye");
+    }
+    else if (command.equals("Mario")){
+      System.out.println("Go back to the mushroom kingdom");
+    }
+    else if (command.equals("Luigi")){
+      System.out.println("L is real");
+    }
+    else if (command.equals("Toad")){
+      System.out.println("Get out. Leave. We don't want you here.");
+    }
+    else if (command.equals("Secret")){
+      System.out.println("Oh wow, look at the special little baby trying to be cool. Get out of my sight.");
     }
     else {
       System.out.println("Learn how to spell, dingus. Should should reload, NOW!");
