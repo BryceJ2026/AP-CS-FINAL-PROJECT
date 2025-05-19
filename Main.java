@@ -23,6 +23,32 @@ public class Main {
       if(command.equals("Wizard")){
         String className = command;
         System.out.println("You picked " + className + "!");
+        
+        command = scan.nextLine();
+        System.out.println("You must now pick an area to spawn in! You can pick from Mountain, Hell, Grassland, Ocean, Desert.");
+        if(command.equals("Mountain") ) {
+          String biome = command;
+          System.out.println("You picked," + biome + "!");
+
+          command = scan.nextLine();
+          System.out.println("You appear in a cold, ");
+        }
+        if(command.equals("Hell") ) {
+          String biome = command;
+          System.out.println("You picked," + biome + "!");
+        }
+        if(command.equals("Grassland") ) {
+          String biome = command;
+          System.out.println("You picked," + biome + "!");
+        }
+        if(command.equals("Desert") ) {
+          String biome = command;
+          System.out.println("You picked," + biome + "!");
+        }
+        if(command.equals("Ocean") ) {
+          String biome = command;
+          System.out.println("You picked," + biome + "!");
+        }
       }
       if(command.equals("Fighter")){
         String className = command;
