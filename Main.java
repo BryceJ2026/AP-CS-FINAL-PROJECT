@@ -6,15 +6,13 @@ public class Main {
    public static void main(String []args) {
     Scanner scan = new Scanner(System.in);
     
-    
-
-
 
     System.out.println("Pick a race: orc, elf, human, tree, tiefling, gnome, dwarf, halfling, and gundam.");
     String command = scan.nextLine();
 
     if (command.equals("orc")){
       String race = command;
+      int maxHealth = 20;
       System.out.println("You picked " + race);
       
 
@@ -31,23 +29,36 @@ public class Main {
           System.out.println("You picked," + biome + "!");
 
           command = scan.nextLine();
-          System.out.println("You appear in a cold, ");
+          System.out.println("You have spawned on a large mountain, it is cold. There are two paths, one leading down the mountain and one leading up the mountain. which do you pick? (up,down)");
+
+          if (command.equals("up")) {
+            
+          }
+          if (command.equals("down")) {
+            
+          }
         }
         if(command.equals("Hell") ) {
           String biome = command;
           System.out.println("You picked," + biome + "!");
+
+          System.out.println("You have spawned in hell. You get tortured for till the end of time. THE HELL ENDING(what did you expect)");
         }
         if(command.equals("Grassland") ) {
           String biome = command;
           System.out.println("You picked," + biome + "!");
+          System.out.println("You have spawned in a grassland. It is quiet, too quiet.");
         }
         if(command.equals("Desert") ) {
           String biome = command;
           System.out.println("You picked," + biome + "!");
+          System.out.println("You have spawned in a desert. It is hot.");
         }
         if(command.equals("Ocean") ) {
           String biome = command;
           System.out.println("You picked," + biome + "!");
+
+          System.our.println("You drowned. THE OBVIOUS ENDING");
         }
       }
       if(command.equals("Fighter")){
@@ -91,6 +102,7 @@ public class Main {
     }
     else if (command.equals("elf")){
       String race = command;
+      int maxHealth = 20;
       System.out.print("You picked " + race);
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
        command = scan.nextLine();
@@ -137,6 +149,7 @@ public class Main {
     }
     else if (command.equals("human")){
       String race = command;
+      int maxHealth = 20;
       System.out.print("You picked " + race);
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
        command = scan.nextLine();
@@ -182,6 +195,7 @@ public class Main {
       }
     }
     else if (command.equals("tree")){
+      int maxHealth = 20;
       String race = command;
       System.out.print("You picked " + race);
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
@@ -229,6 +243,7 @@ public class Main {
     }
     else if (command.equals("tiefling")){
       String race = command;
+      int maxHealth = 20;
       System.out.print("You picked " + race);
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
        command = scan.nextLine();
@@ -275,6 +290,7 @@ public class Main {
     }
     else if (command.equals("gnome")){
       String race = command;
+      int maxHealth = 20;
       System.out.println("You picked " + race);
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
        command = scan.nextLine();
@@ -320,6 +336,7 @@ public class Main {
       }
     }
     else if (command.equals("dwarf")){
+      int maxHealth = 20;
       String race = command;
       System.out.println("You picked " + race);
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
@@ -366,6 +383,7 @@ public class Main {
       }
     }
     else if (command.equals("halfling")){
+      int maxHealth = 20;
       String race = command;
       System.out.println("You picked " + race);
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
@@ -411,6 +429,12 @@ public class Main {
         System.out.println("You picked " + className + "!");
       }
     }
+  
+
+
+
+
+
     else if (command.equals("gundam")){
       String race = command;
       System.out.println("You fly off into space. THE GUNDAM ENDING");
