@@ -13,7 +13,7 @@ public class Main {
     if (command.equals("orc")){
       String race = command;
       int maxHealth = 20;
-      System.out.println("You picked " + race);
+      System.out.println("You picked " + race + ". Your health is " + maxHealth + "! Stay healthy!");
       
 
       System.out.println("Now, pick a class. Wizard, Fighter, Monk, Virgil from DMC5, Gun, Shadow the hedgehog, Druid, Fighter, Barbarian, Rogue, Warlock");
@@ -22,20 +22,21 @@ public class Main {
         String className = command;
         System.out.println("You picked " + className + "!");
         
-        command = scan.nextLine();
+        
         System.out.println("You must now pick an area to spawn in! You can pick from Mountain, Hell, Grassland, Ocean, Desert.");
+        command = scan.nextLine();
         if(command.equals("Mountain") ) {
           String biome = command;
-          System.out.println("You picked," + biome + "!");
+          System.out.println("You picked, " + biome + "!");
 
           command = scan.nextLine();
           System.out.println("You have spawned on a large mountain, it is cold. There are two paths, one leading down the mountain and one leading up the mountain. which do you pick? (up,down)");
 
           if (command.equals("up")) {
-            
+            System.out.println("As you walk up the path, you reach the peak. You freeze to death. THE FROZEN ENDING");
           }
           if (command.equals("down")) {
-            
+            System.out.println("The path leads you down to the entrance of a cave.");
           }
         }
         if(command.equals("Hell") ) {
@@ -47,18 +48,18 @@ public class Main {
         if(command.equals("Grassland") ) {
           String biome = command;
           System.out.println("You picked," + biome + "!");
-          System.out.println("You have spawned in a grassland. It is quiet, too quiet.");
+          System.out.println("You have spawned in a grassland. It is quiet, too quiet. Do you look around, or take a nap?(look/nap)");
         }
         if(command.equals("Desert") ) {
           String biome = command;
           System.out.println("You picked," + biome + "!");
-          System.out.println("You have spawned in a desert. It is hot.");
+          System.out.println("You have spawned in a desert. It is hot. There seems to be a oasis nearby. There is also a group of people behind you.(oasis/people)");
         }
         if(command.equals("Ocean") ) {
           String biome = command;
           System.out.println("You picked," + biome + "!");
 
-          System.our.println("You drowned. THE OBVIOUS ENDING");
+          System.out.println("You drowned. THE OBVIOUS ENDING");
         }
       }
       if(command.equals("Fighter")){
