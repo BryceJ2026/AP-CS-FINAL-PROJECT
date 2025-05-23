@@ -54,6 +54,14 @@ public class Main {
           String biome = command;
           System.out.println("You picked," + biome + "!");
           System.out.println("You have spawned in a desert. It is hot. There seems to be a oasis nearby. There is also a group of people behind you.(oasis/people)");
+          
+          if(command.equals("oasis")){
+            System.out.println("You go up to the oasis, and touch the water. You feel your hands hit the sand, and realize it was a mirage. The wind starts to pick up. A sandstorm is rolling in.");
+          }
+          if(command.equals("people")){
+            System.out.println("You walk to the group of people, they turn out to be bandits.");
+          }
+
         }
         if(command.equals("Ocean") ) {
           String biome = command;
